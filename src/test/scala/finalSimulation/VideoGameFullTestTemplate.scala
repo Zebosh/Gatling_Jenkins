@@ -51,15 +51,6 @@ class VideoGameFullTestTemplate extends Simulation {
   }
 
   /** SETUP LOAD SIMULATION */
-  val scn = scenario("Challenge set simulation")
-    .exec(getAllVideoGames())
-    .pause(3)
-    .exec(createNewGame())
-    .pause(3)
-    .exec(getSpecificVideoGame())
-    .pause(3)
-    .exec(deleteGame())
-    .pause(2)
 
   // create a scenario that has runtime parameters for:
   // 1. Users
